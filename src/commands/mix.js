@@ -42,7 +42,7 @@ module.exports = {
 		.then(channel => {
 			channel.members.forEach(member => members.push(member.user.username))
 			const [ team1, team2 ] = splitRandom(members, 2)
-			if(members.length !== 10) interaction.replys("Tem q ter 10 cabeças na call po!")
+			if(members.length !== 10) interaction.reply("Tem q ter 10 cabeças na call po!")
 
 			embed
 			.setTitle(`**MIX DUSGURI**`)
